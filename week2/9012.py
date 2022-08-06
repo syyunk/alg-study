@@ -5,7 +5,7 @@ for i in range(n):
     s=[]
     str=input()
 
-    for j in range(str):                # for j in str로 수정하면 에러 안남
+    for j in str:                # for j in range(len(str)) -> 0, 1, 2, 3...
         if j=="(" :
             s.append(j)
 
