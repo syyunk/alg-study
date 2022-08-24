@@ -2,6 +2,8 @@ from sys import stdin
 
 input()
 
+# 덱 없이 큐 구현하기
+# 시간복잡도 문제 피하려면 큐의 출구 인덱스를 따로 저장!
 s, com=[], stdin.readlines()
 cnt=0
 
