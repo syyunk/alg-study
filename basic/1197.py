@@ -1,6 +1,7 @@
 import sys
 input=sys.stdin.readline
 
+#최소 스패닝 트리
 #kruskal알고리즘 = 최소신장거리 찾기
 
 def findParent(parent, x):
@@ -33,7 +34,6 @@ res=0
 for _ in range(edge):
     a, b, cost=map(int, input().split())
     #비용순 정렬 위해 튜플의 첫쨰 원소를 cost로 저장
-    #이 경우 파이썬에서는 다른 조건이 같을 때 cost를 기준으로 오름차순 정렬해줌 
     edges.append((cost, a, b))
     
 #간선을 비용순으로 정렬
