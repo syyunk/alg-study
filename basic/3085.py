@@ -1,3 +1,5 @@
+# 사탕게임
+
 import sys
 input=sys.stdin.readline
 
@@ -38,7 +40,7 @@ for i in range(n):
         #i=x축, j=y축
         #열 바꾸기 - n*n 범위 내에서
         if j+1<n:
-            #인접한 것과 바꾸기
+            #인접한 열과 바꾸기
             candys[i][j], candys[i][j+1]=candys[i][j+1], candys[i][j]
             answer=max(check(candys), answer)
             #바꿨던 것을 원래대로 돌려놓기
@@ -46,7 +48,7 @@ for i in range(n):
 
         #행 바꾸기
         if i+1<n:
-            #인접한 것과 바꾸기
+            #인접한 행과 바꾸기
             candys[i][j], candys[i+1][j]=candys[i+1][j], candys[i][j]
             answer=max(check(candys), answer)
             #바꿨던 것을 원래대로 돌려놓기
