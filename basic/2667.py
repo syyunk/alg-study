@@ -1,4 +1,4 @@
-#단지수 세기
+#단지번호 붙이기
 #bfs
 from collections import deque
 import sys

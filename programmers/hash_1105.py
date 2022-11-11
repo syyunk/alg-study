@@ -1,11 +1,11 @@
-from collections import Counter
+#완주하지 못한 선수
 
 def solution(participant, completion):
-    answer=''
-    mix=participant+completion
-    answer = Counter(mix)
-    for i in range(len(answer)):
-        if answer.values(i)==0:
-            ans=answer.keys(i)
+    answer = ''
+    participant.sort()
+    completion.sort()
+    for i in range(len(completion)):
+        if participant[i]!=completion[i]:
+            return participant[i]
 
-    return ans
+    return participant[-1]
